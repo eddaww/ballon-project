@@ -1,0 +1,46 @@
+.product-detail-container{
+  height: 95%;
+  flex: 1;
+  background-color: gray;
+  border: 1px solid yellow;
+  padding: 1%;
+}
+
+.product-detail-container h2{
+  font-size: max(35px, 2.7em);
+  /* border: 2px solid yellow; */
+  margin-bottom: 2%;
+}
+
+.feature{
+  font-size: max(25px, 1.9em);
+  color: rgb(188, 27, 27);
+  /* border: 2px solid green; */
+  margin: 0;
+  padding-left: 2%;
+}
+
+
+.feature-box {
+  color: rgb(151, 16, 16);
+  font-size: 1.4em;
+  /* border: 2px solid purple; */
+  margin: 0;
+}
+
+.possible-feature{
+  color: blue;
+  font-size: max(25px, 1.9em);
+  padding-left: 2%;
+  /* border: 2px solid yellow; */
+  margin-top: 8%;
+  margin-bottom: 0;
+}
+ 
+.possible-add-feature-box{
+  color:rgb(2, 2, 167);
+  font-size: 1.4em;
+  margin: 0;
+  /* border: 2px solid purple; */
+}
+
