@@ -4,6 +4,8 @@
   background-color: gray;
   border: 1px solid yellow;
   padding: 1%;
+  overflow: auto;
+  min-width: 200px;
 }
 
 .product-detail-container h2{
