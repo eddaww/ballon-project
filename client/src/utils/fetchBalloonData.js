@@ -1,7 +1,8 @@
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 export async function fetchBalloonData(hour = "00") {
   try {
-    const res = await fetch(`http://localhost:4000/balloons/${hour}`);
+    const res = await fetch(`${API_BASE}/balloons/${hour}`);
     return await res.json(); // [[lat, lon, height], ...]
   } catch (err) {
     console.error("fetchBalloonData failed", err);
@@ -15,7 +16,7 @@ export async function fetchBalloonHistory(hours = 24) {
 
   for (let i = 0; i < hours; i++) {
     try {
-      const res = await fetch(`http://localhost:4000/balloons/${String(i).padStart(2, "0")}`);
+      const res = await fetch(`${API_BASE}/balloons/${String(i).padStart(2, "0")}`);
       const data = await res.json();
       results.push(data);
     } catch (err) {

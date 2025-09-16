@@ -25,6 +25,7 @@ export default function BalloonMap() {
     });
     mapRef.current = map;
 
+    //navagation
     map.addControl(new mapboxgl.FullscreenControl(), "top-right");
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
     map.addControl(new mapboxgl.ScaleControl({ maxWidth: 100, unit: "metric" }));
@@ -103,7 +104,7 @@ export default function BalloonMap() {
       },
     });
 
-    map.loadImage("/balloon.png", (error, image) => {
+    map.loadImage("balloon.png", (error, image) => {
       if (error) return console.error("Failed to load icon:", error);
       if (!map.hasImage("balloon-icon")) map.addImage("balloon-icon", image);
 

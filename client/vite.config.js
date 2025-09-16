@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../dist',   // 默认值（生成在 client/dist）
+    outDir: '../dist' 
   },
+  base: '/profile/balloon-project/' 
 })

@@ -10,9 +10,9 @@ app.use(cors());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "../dist")));
+app.use("/profile/balloon-project", express.static(path.join(__dirname, "../dist")));
 
-app.get("/balloons/:hour", async (req, res)=>{
+app.get("/profile/balloon-project/api/balloons/:hour", async (req, res)=>{
   const hour = req.params.hour|| "00";
   try{
     const response = await axios.get(`https://a.windbornesystems.com/treasure/${hour}.json`);
@@ -23,7 +23,7 @@ app.get("/balloons/:hour", async (req, res)=>{
   }
 });
 
-app.get(/.*/, (req, res) => {
+app.get(/^\/profile\/balloon-project\/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, "../dist", "index.html"));
 });
 

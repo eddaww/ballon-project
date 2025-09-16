@@ -63,3 +63,8 @@
   text-indent: 0;
 }
 
+.mapboxgl-popup-close-button {
+  color: gray;          
+  font-size: 18px;     
+  opacity: 0.8;        
+}
