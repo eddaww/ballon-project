@@ -12,6 +12,7 @@ export default function ProductDetails () {
         <li>Search for locations</li>
         <li>Map controls</li>
         <li>Balloon popups with detailed information</li>
+        <li>Balloon data updates every hour at xx:00</li>
 
       </ul>
       <h3 className="possible-feature">Possible Add Feature: </h3>

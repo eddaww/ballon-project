@@ -1,11 +1,15 @@
 .product-detail-container{
-  height: 95%;
-  flex: 1;
+  height: max(100%, 800px);
+  width: 25%;
+  top: 0;
+  left: 0;
   background-color: gray;
   border: 1px solid yellow;
-  padding: 1%;
+  padding: 0 1%;
   overflow: auto;
   min-width: 200px;
+  flex: 1;
+  z-index: 3;
 }
 
 .product-detail-container h2{
@@ -35,7 +39,7 @@
   font-size: max(25px, 1.9em);
   padding-left: 2%;
   /* border: 2px solid yellow; */
-  margin-top: 8%;
+  margin-top: 3%;
   margin-bottom: 0;
 }
  

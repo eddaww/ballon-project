@@ -1,8 +1,9 @@
 #root {
   color: black;
-  width: 100%;
-  height: 100%;
+  width: 98vw;
+  height: 98vh;
   display: flex; 
   background-color: #242424;
-  /* border: 3px solid white; */
+  /* min-width: 750px; */
+  margin: none;
 }
