@@ -205,6 +205,20 @@ export default function BalloonMap() {
       </div>
 
       <div ref={mapContainerRef} className="map-container" />
+      <div className="note">
+        <p>
+          Since the job market is really bad right now, I am wondering if the position has already been filled.  
+          I don't have much time to work on this project in the next few days, so I decided to wrap up this project and deliver the product.  
+          If you are interested in this project, feel free to contact me at <span>edd01work@gmail.com</span>.  
+          I am able to do more on this.  
+          If you are interested in me, you can check out my project
+          <a href="https://edwinproject.click" target="_blank" rel="noopener noreferrer">https://edwinproject.click</a>.  
+          Only one project for now, but I am continuously delivering new projects for better job opportunities. Here is my resume<a href="https://drive.google.com/file/d/1fVZbBnr7BAc2vzR18dHcPaWf7EPraS7v/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Click here</a>  
+          . Hope you like this.
+        </p>
+        <p className="name">Yi Tian Cai</p>
+      </div>
+
     </div>
   );
 }

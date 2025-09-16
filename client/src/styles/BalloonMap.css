@@ -40,3 +40,26 @@
   background-color:blueviolet;
   /* border: 2px solid red; */
 }
+
+.note{
+  background-color:cadetblue;
+  padding: 1% 2%;
+  margin: 1% 2%;
+}
+.note p{
+  text-indent: 2em;
+}
+
+.note span{
+  font-weight: bold;
+}
+
+.note a{
+  margin-left: 4px;
+  color: blue;
+}
+
+.note p.name {
+  text-indent: 0;
+}
+
